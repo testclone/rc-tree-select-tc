@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CSSMotionList from 'rc-animate/lib/CSSMotionList';
 import Selection from './Selection';
-import SearchInput from '../../SearchInput';
 
 const NODE_SELECTOR = 'selector';
 const NODE_SEARCH = 'search';
@@ -19,7 +18,6 @@ const SelectorList = props => {
     maxTagPlaceholder,
     showSearch,
     valueEntities,
-    inputRef,
     onMultipleSelectorRemove,
   } = props;
   const nodeKeys = [];
@@ -94,11 +92,7 @@ const SelectorList = props => {
             />
           );
         }
-        return (
-          <li className={`${prefixCls}-search ${prefixCls}-search--inline`}>
-            <SearchInput {...props} ref={inputRef} needAlign />
-          </li>
-        );
+        return null;
       }}
     </CSSMotionList>
   );

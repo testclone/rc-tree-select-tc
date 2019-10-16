@@ -9,6 +9,11 @@
 .check-select {
   width: 300px;
   .rc-tree-select-selection--multiple {
-    min-height: 50px;
+    overflow-y: hidden;
+  }
+  .rc-tree-select-selection__choice__content{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
   }
 }

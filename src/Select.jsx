@@ -34,7 +34,6 @@ import { popupContextTypes } from './Base/BasePopup';
 import SingleSelector from './Selector/SingleSelector';
 import MultipleSelector, { multipleSelectorContextTypes } from './Selector/MultipleSelector';
 import SinglePopup from './Popup/SinglePopup';
-import MultiplePopup from './Popup/MultiplePopup';
 
 import { SHOW_ALL, SHOW_PARENT, SHOW_CHILD } from './strategies';
 
@@ -1024,7 +1023,7 @@ class Select extends React.Component {
       ariaId: this.ariaId,
     };
 
-    const Popup = isMultiple ? MultiplePopup : SinglePopup;
+    const Popup = SinglePopup;
     const $popup = (
       <Popup
         ref={this.setPopupRef}

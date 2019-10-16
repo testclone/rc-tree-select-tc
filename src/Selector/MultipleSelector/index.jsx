@@ -20,7 +20,6 @@ class MultipleSelector extends React.Component {
     labelInValue: PropTypes.bool,
     maxTagCount: PropTypes.number,
     maxTagPlaceholder: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
-
     onChoiceAnimationLeave: PropTypes.func,
   };
 
@@ -50,19 +49,13 @@ class MultipleSelector extends React.Component {
   };
 
   renderPlaceholder = () => {
-    const {
-      prefixCls,
-      placeholder,
-      searchPlaceholder,
-      searchValue,
-      selectorValueList,
-    } = this.props;
+    const { prefixCls, placeholder, searchPlaceholder, selectorValueList } = this.props;
 
     const currentPlaceholder = placeholder || searchPlaceholder;
 
     if (!currentPlaceholder) return null;
 
-    const hidden = searchValue || selectorValueList.length;
+    const hidden = selectorValueList.length;
 
     // [Legacy] Not remove the placeholder
     return (
@@ -97,7 +90,6 @@ class MultipleSelector extends React.Component {
       <Selector
         {...this.props}
         tabIndex={-1}
-        showArrow={false}
         renderSelection={this.renderSelection}
         renderPlaceholder={this.renderPlaceholder}
       />
