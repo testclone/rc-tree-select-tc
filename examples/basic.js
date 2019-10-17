@@ -1,11 +1,11 @@
 /* eslint react/no-multi-comp:0, no-console:0, no-alert: 0 */
 
-import 'rc-tree-select/assets/index.less';
+import 'rc-tree-select-tc/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'rc-dialog/assets/index.css';
 import Dialog from 'rc-dialog';
-import TreeSelect, { TreeNode, SHOW_PARENT } from 'rc-tree-select';
+import TreeSelect, { TreeNode, SHOW_PARENT } from 'rc-tree-select-tc';
 import { gData } from './util';
 import './demo.less';
 

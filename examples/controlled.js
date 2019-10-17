@@ -1,10 +1,10 @@
 /* eslint react/no-multi-comp:0, no-console:0, no-alert: 0 */
 
-import 'rc-tree-select/assets/index.less';
+import 'rc-tree-select-tc/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'rc-dialog/assets/index.css';
-import TreeSelect, { TreeNode } from 'rc-tree-select';
+import TreeSelect, { TreeNode } from 'rc-tree-select-tc';
 import './demo.less';
 
 class Demo extends React.Component {
