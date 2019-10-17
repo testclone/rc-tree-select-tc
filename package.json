@@ -1,21 +1,21 @@
 {
   "name": "rc-tree-select-tc",
   "version": "2.9.2",
-  "description": "tree-select ui component for react",
+  "description": "custom tree-select ui component for react, forked from 2.9.1 version of rc-tree-select",
   "keywords": [
     "react",
     "react-component",
     "react-tree-select",
     "tree-select"
   ],
-  "homepage": "https://github.com/react-component/tree-select",
-  "author": "hualei5280@gmail.com",
+  "homepage": "https://github.com/testclone/rc-tree-select-tc",
+  "author": "testclone@dr.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-component/tree-select.git"
+    "url": "https://github.com/testclone/rc-tree-select-tc"
   },
   "bugs": {
-    "url": "https://github.com/react-component/tree-select/issues"
+    "url": "https://github.com/testclone/rc-tree-select-tc/issues"
   },
   "files": [
     "es",
