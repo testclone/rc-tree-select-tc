@@ -37,7 +37,7 @@ class MultipleSelector extends React.Component {
   }
 
   onPlaceholderClick = () => {
-    this.inputRef.current.focus();
+    this.inputRef.current && this.inputRef.current.focus();
   };
 
   focus = () => {
