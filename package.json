@@ -1,6 +1,6 @@
 {
   "name": "rc-tree-select-tc",
-  "version": "2.9.4",
+  "version": "2.9.5",
   "description": "custom tree-select ui component for react, forked from 2.9.1 version of rc-tree-select",
   "keywords": [
     "react",
